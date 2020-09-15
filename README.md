@@ -1,9 +1,5 @@
 # TOPKICKS README <!-- omit in toc -->
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
@@ -24,106 +20,100 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**TOPKICKS** is a social platform for sneaker heads to share intrests in their tops kick wheather it is shoes or sneakers. A coalation of good footware appreciation.
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+> TopKicks in mobile form then tablet then desktop with simple layout, pictures, and working CRUD.
+View mobile wireframs for more details.
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+
+- A functional CRUD, create, read, update, and delete sneakers/shoes or users choice
+- A design/CSS layout
+- Seeding sneaker/shoe data
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   React.         | _Front-End visuals and actions_ |
+|   React Router   | _Front-End visuals and action _ |
+|   Npm            | _Back-End action based_  |
+|   Ruby           | _Back-End action based_  |
+
 
 <br>
 
 ### Client (Front End)
 
+
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+- Desktop View
 
-- Desktop Landing
+https://app.lucidchart.com/invitations/accept/676505f4-9176-4164-903e-30b9ec0a3999
 
-![Dummy Link](url)
+- Tablet View
 
-- Desktop Hero
+https://app.lucidchart.com/invitations/accept/ca8c9fad-b6f5-4418-a952-5462e8aa01fb
 
-![Dummy Link](url)
+- Mobile View
 
-- Resource Index
+https://app.lucidchart.com/invitations/accept/99ab58a5-c353-4fb8-acf9-bf5c5af1db4c
 
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+> React components and the data architecture of TOPKICKS. Expectations of directory/file tree. 
 
 ``` structure
 
 src
 |__ assets/
-      |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
-|__ components/
+|__ components/Nav
       |__ Header.jsx
-|__ services/
+      |__ Footer.jsx
+|__ components/User
+      |__ Login.jsx
+      |__ Register.jsx
+      |__ AddKick.jsx
+      |__ EditKick.jsx
+      |__ DeleteKick.jsx
+|__ screens/
+      |__ Splash.jsx
+      |__ Home.jsx
+      |__ Kicks.jsx
+      |__ Brands.jsx
+      |__ KickBrands.jsx
+
 
 ```
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+> Breaking down components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Nav       | functional |   Y   |   n   | Header and Footer               |
+|    Login     | functional |   Y   |   n   | _User login_               |
+|  Register    | functional |   Y   |   n   | _User registration_        |
+|   AddKick    | functional |   y   |   y   | _Kicks added and rendered via props_      |
+| EditKick     | functional |   y   |   y   | _The kicks will render the post info via props._                 |
+| DeleteKick   | functional |   y   |   y   | _The kicks will render the post info via props._ |
 
 #### Time Estimates
 
@@ -131,11 +121,20 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Nav        |    L     |      3 hrs     |     2 hrs     |    TBD      |
+| Home       |    H     |    4 hrs       |     2 hrs     |    TBD      |
+| Login      |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Register   |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| AddKick    |    H     |     4 hrs      |     1 hrs     |     TBD     |
+| EditKick   |    H     |     4 hrs      |     1 hrs     |     TBD     |
+| DeleteKick |    H     |     4 hrs      |     1 hrs     |     TBD     |
+| Splash     |    L     |     3 hrs      |     1 hrs     |     TBD     |
+| Kicks      |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Brands     |    L     |     3 hrs      |     1 hrs     |     TBD     |
+| KickBrands |    H     |     3 hrs      |     1 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| TOTAL      |          |     37 hrs     |     3 hrs    |     TBD    |
+
 
 <br>
 
@@ -143,7 +142,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+https://app.lucidchart.com/invitations/accept/ecd90db9-8e6a-4d51-b7b2-7bc626c8db75
+
 
 <br>
 
@@ -151,7 +151,7 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+> Adding comments, functional components in each size, Graphics, animations, trackers and ads
 
 ***
 
