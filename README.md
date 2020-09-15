@@ -61,17 +61,18 @@ View mobile wireframs for more details.
 #### Wireframes
 
 
-- Desktop View
+- Mobile View
 
 https://app.lucidchart.com/invitations/accept/676505f4-9176-4164-903e-30b9ec0a3999
+
+- Desktop View
+
+https://app.lucidchart.com/invitations/accept/99ab58a5-c353-4fb8-acf9-bf5c5af1db4c
 
 - Tablet View
 
 https://app.lucidchart.com/invitations/accept/ca8c9fad-b6f5-4418-a952-5462e8aa01fb
 
-- Mobile View
-
-https://app.lucidchart.com/invitations/accept/99ab58a5-c353-4fb8-acf9-bf5c5af1db4c
 
 
 #### Component Hierarchy
@@ -143,7 +144,6 @@ src
 #### ERD Model
 
 https://app.lucidchart.com/invitations/accept/ecd90db9-8e6a-4d51-b7b2-7bc626c8db75
-
 
 <br>
 
