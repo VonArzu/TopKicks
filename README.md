@@ -73,6 +73,11 @@ https://app.lucidchart.com/invitations/accept/99ab58a5-c353-4fb8-acf9-bf5c5af1db
 
 https://app.lucidchart.com/invitations/accept/ca8c9fad-b6f5-4418-a952-5462e8aa01fb
 
+#### Component Tree
+
+Structure of how React components are being rendered.Parent to child relation between components.
+
+https://app.lucidchart.com/invitations/accept/f88b575a-39ee-4ff5-a13a-03ca0f0f98a9
 
 
 #### Component Hierarchy
