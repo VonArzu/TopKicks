@@ -63,11 +63,11 @@ View mobile wireframs for more details.
 
 - Mobile View
 
-https://app.lucidchart.com/invitations/accept/676505f4-9176-4164-903e-30b9ec0a3999
+https://app.lucidchart.com/invitations/accept/d564e75d-c3c4-4c9a-b1c9-51be793bf6d0
 
 - Desktop View
 
-https://app.lucidchart.com/invitations/accept/99ab58a5-c353-4fb8-acf9-bf5c5af1db4c
+https://app.lucidchart.com/invitations/accept/4aeca113-fb23-4dd7-9915-a8da21664911
 
 - Tablet View
 
