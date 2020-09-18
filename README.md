@@ -20,21 +20,18 @@
 
 ## Overview
 
-_**TOPKICKS** is a social platform for sneaker heads to share intrests in their tops kick wheather it is shoes or sneakers. A coalation of good footware appreciation.
-
+\_**TOPKICKS** is a social platform for sneaker heads to share intrests in their tops kick wheather it is shoes or sneakers. A coalation of good footware appreciation.
 
 <br>
 
 ## MVP
 
-
 > TopKicks in mobile form then tablet then desktop with simple layout, pictures, and working CRUD.
-View mobile wireframs for more details.
+> View mobile wireframs for more details.
 
 <br>
 
 ### Goals
-
 
 - A functional CRUD, create, read, update, and delete sneakers/shoes or users choice
 - A design/CSS layout
@@ -44,22 +41,18 @@ View mobile wireframs for more details.
 
 ### Libraries and Dependencies
 
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|   React.         | _Front-End visuals and actions_ |
-|   React Router   | _Front-End visuals and action _ |
-|   Npm            | _Back-End action based_  |
-|   Ruby           | _Back-End action based_  |
-
+|   Library    | Description                     |
+| :----------: | :------------------------------ |
+|    React.    | _Front-End visuals and actions_ |
+| React Router | _Front-End visuals and action _ |
+|     Npm      | _Back-End action based_         |
+|     Ruby     | _Back-End action based_         |
 
 <br>
 
 ### Client (Front End)
 
-
 #### Wireframes
-
 
 - Mobile View
 
@@ -79,12 +72,11 @@ Structure of how React components are being rendered.Parent to child relation be
 
 https://app.lucidchart.com/invitations/accept/f88b575a-39ee-4ff5-a13a-03ca0f0f98a9
 
-
 #### Component Hierarchy
 
-> React components and the data architecture of TOPKICKS. Expectations of directory/file tree. 
+> React components and the data architecture of TOPKICKS. Expectations of directory/file tree.
 
-``` structure
+```structure
 
 src
 |__ assets/
@@ -112,23 +104,23 @@ src
 
 > Breaking down components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Nav       | functional |   Y   |   n   | Header and Footer               |
-|    Login     | functional |   Y   |   n   | _User login_               |
-|  Register    | functional |   Y   |   n   | _User registration_        |
-|   AddKick    | functional |   y   |   y   | _Kicks added and rendered via props_      |
-| EditKick     | functional |   y   |   y   | _The kicks will render the post info via props._                 |
-| DeleteKick   | functional |   y   |   y   | _The kicks will render the post info via props._ |
+| Component  |    Type    | state | props | Description                                      |
+| :--------: | :--------: | :---: | :---: | :----------------------------------------------- |
+|    Nav     | functional |   Y   |   n   | Header and Footer                                |
+|   Login    | functional |   Y   |   n   | _User login_                                     |
+|  Register  | functional |   Y   |   n   | _User registration_                              |
+|  AddKick   | functional |   y   |   y   | _Kicks added and rendered via props_             |
+|  EditKick  | functional |   y   |   y   | _The kicks will render the post info via props._ |
+| DeleteKick | functional |   y   |   y   | _The kicks will render the post info via props._ |
 
 #### Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Nav        |    L     |      3 hrs     |     2 hrs     |    TBD      |
-| Home       |    H     |    4 hrs       |     2 hrs     |    TBD      |
+| Task       | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------- | :------: | :------------: | :-----------: | :---------: |
+| Nav        |    L     |     3 hrs      |     2 hrs     |     TBD     |
+| Home       |    H     |     4 hrs      |     2 hrs     |     TBD     |
 | Login      |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Register   |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | AddKick    |    H     |     4 hrs      |     1 hrs     |     TBD     |
@@ -139,8 +131,7 @@ src
 | Brands     |    L     |     3 hrs      |     1 hrs     |     TBD     |
 | KickBrands |    H     |     3 hrs      |     1 hrs     |     TBD     |
 
-| TOTAL      |          |     37 hrs     |     3 hrs    |     TBD    |
-
+| TOTAL | | 37 hrs | 3 hrs | TBD |
 
 <br>
 
@@ -152,13 +143,13 @@ https://app.lucidchart.com/invitations/accept/ecd90db9-8e6a-4d51-b7b2-7bc626c8db
 
 <br>
 
-***
+---
 
 ## Post-MVP
 
 > Adding comments, functional components in each size, Graphics, animations, trackers and ads
 
-***
+---
 
 ## Code Showcase
 
