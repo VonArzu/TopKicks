@@ -28,7 +28,7 @@ end
 #     def set_brand
 #       @brand = Brand.find(params[:id])
 #     end
-
+# Commit message
 #     # Only allow a trusted parameter "white list" through.
 #     def brand_params
 #       params.require(:brand).permit(:name)
