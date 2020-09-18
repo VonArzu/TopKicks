@@ -1,5 +1,5 @@
 class BrandsController < ApplicationController
-  before_action :set_brand, only: [:show, :update, :destroy]
+  before_action :set_brand, only: %i[show update destroy]
 
   # GET /brands
   def index
@@ -13,39 +13,24 @@ class BrandsController < ApplicationController
     render json: @brand
   end
 
-  # POST /brands
-  def create
-    @brand = Brand.new(brand_params)
+  def add_brand_to_kick
+    @kick = Kick.find(params[:kick_id])
+    @brand = Brand.find(params[:id])
 
-    if @brand.save
-      render json: @brand, status: :created, location: @brand
-    else
-      render json: @brand.errors, status: :unprocessable_entity
-    end
+    @kick.brands << @brand
+
+    render json: @kick, include: :brands
   end
-
-  # PATCH/PUT /brands/1
-  def update
-    if @brand.update(brand_params)
-      render json: @brand
-    else
-      render json: @brand.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /brands/1
-  def destroy
-    @brand.destroy
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_brand
-      @brand = Brand.find(params[:id])
-    end
-
-    # Only allow a trusted parameter "white list" through.
-    def brand_params
-      params.require(:brand).permit(:name)
-    end
 end
+
+#   private
+#     # Use callbacks to share common setup or constraints between actions.
+#     def set_brand
+#       @brand = Brand.find(params[:id])
+#     end
+
+#     # Only allow a trusted parameter "white list" through.
+#     def brand_params
+#       params.require(:brand).permit(:name)
+#     end
+# end

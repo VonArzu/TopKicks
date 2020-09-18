@@ -1,4 +1,5 @@
 class KicksController < ApplicationController
+  before_action :authorize_request, only: [:create, :update, :destroy]
   before_action :set_kick, only: [:show, :update, :destroy]
 
   # GET /kicks
@@ -10,15 +11,19 @@ class KicksController < ApplicationController
 
   # GET /kicks/1
   def show
-    render json: @kick
-  end
+   
+    @kick = Kick.find(params[:id])
+    render​ ​json:​ ​@kick, ​include:​ ​:brands
+
+    ​end
 
   # POST /kicks
   def create
     @kick = Kick.new(kick_params)
+    @kick.user = @current_user
 
     if @kick.save
-      render json: @kick, status: :created, location: @kick
+      render json: @kick, status: :created
     else
       render json: @kick.errors, status: :unprocessable_entity
     end
@@ -41,7 +46,7 @@ class KicksController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_kick
-      @kick = Kick.find(params[:id])
+      @kick = @current_user.kicks.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
