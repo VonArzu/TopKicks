@@ -5,7 +5,7 @@ import "./App.css";
 
 import Layout from "./Layouts/Layout";
 import Login from "./screens/Login/Login";
-import Register from "./screens/Register/Register";
+// import Register from "./screens/Register/Register";
 
 import {
   loginUser,
@@ -21,6 +21,7 @@ import Brands from "./screens/Brands/Brands";
 // import CreateKick from "./screens/CreateKick/CreateKick";
 // import EditKick from "./screens/EditKick/EditKick";
 import KickDetail from "./screens/KickDetail/KickDetail";
+import Register from "./screens/Register/Register";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
