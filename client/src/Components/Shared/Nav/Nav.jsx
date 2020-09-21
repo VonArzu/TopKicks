@@ -19,6 +19,12 @@ const Nav = () => {
           <NavLink className="linkb" to="/Brands">
             BRANDS
           </NavLink>
+          <NavLink className="linkb" to="/Login">
+            Login
+          </NavLink>
+          <NavLink className="linkb" to="/Register">
+            Register
+          </NavLink>
         </div>
       </div>
     </nav>

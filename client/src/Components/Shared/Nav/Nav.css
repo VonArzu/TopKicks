@@ -62,56 +62,7 @@ a {
   text-decoration: none;
 }
 
-.dropdown-contentb,
-a.linkb {
-  float: none;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-.dropdownb .dropbtnb {
-  font-size: 24px;
-  font-weight: 900;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 8px;
-  background-color: inherit;
-  font-family: inherit;
-}
-
-/* .navbarb option:hover,
-.dropdownb:hover .dropbtnb {
-  background-color: rgba(20, 20, 18, 0.876);
-} */
-
-.dropdown-contentb {
-  color: white;
-  display: none;
-  position: absolute;
-  background-color: rgba(20, 20, 18, 0.876);
-  min-width: 160px;
-  z-index: 1;
-  color: white;
-}
-
-.dropdown-contentb option {
-  float: none;
-  color: white;
-  /* padding: 12px 16px; */
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
 a.linkb:hover {
   width: auto;
   background-color: rgba(0, 0, 0, 0.5);
-}
-/* .dropdown-contentb option:hover {
-  background-color: white;
-} */
-
-.dropdownb:hover .dropdown-contentb {
-  display: block;
 }

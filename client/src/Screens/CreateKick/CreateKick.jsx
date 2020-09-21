@@ -1,27 +1,28 @@
 import React, { useState } from "react";
 import { createKick } from "../../services/kicks";
-import Layout from "../../components/shared/Layout/Layout";
+import Header from "../../Components/Header/Header";
+import Nav from "../../Components/Shared/Nav/Nav";
 
-const CreatePet = () => {
-  const [pet, setPet] = useState({
+const CreateKick = () => {
+  const [kick, setKick] = useState({
     name: "",
   });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setPet({
-      ...pet,
+    setKick({
+      ...kick,
       [name]: value,
     });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createPet(pet);
+    await createKick(kick);
   };
 
   return (
-    <Layout>
+    <Nav>
       <div>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
@@ -30,7 +31,7 @@ const CreatePet = () => {
             name="name"
             id="name"
             placeholder="Name"
-            value={pet.name}
+            value={kick.name}
             required
             autoFocus
             onChange={handleChange}
@@ -39,8 +40,8 @@ const CreatePet = () => {
           <input type="submit" value="Submit" />
         </form>
       </div>
-    </Layout>
+    </Nav>
   );
 };
 
-export default CreatePet;
+export default CreateKick;
