@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :opinions
+  resources :comments
   resources :brands, only: :index
   resources :kicks
   post '/auth/login', to: 'authentication#login'
