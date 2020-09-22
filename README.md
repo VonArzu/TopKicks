@@ -153,8 +153,16 @@ https://app.lucidchart.com/invitations/accept/ecd90db9-8e6a-4d51-b7b2-7bc626c8db
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> export const getKick = async (id) => {
+  try {
+    const response = await api.get(`/kicks/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
+Reads one pair of kicks instead of all of them rendering on a page. Took a while to process
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> I completed the full stack app desktop first instead of mobile. Being ambitious was my issue, I creating too many tables in Ruby on Rails and overflowed the schema by experimenting and learning new things. Some things I have learned are creating averages for comments by users and lambda with slugs for letter casing and more I will explore in the near future. I resolved the schema by asking for help, droping, adding, and re migrating tables.
