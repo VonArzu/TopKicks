@@ -20,10 +20,10 @@ export default function Header(props) {
       ) : (
         <>
           <NavLink className="linkb" to="/Login">
-            Login
+            LOGIN
           </NavLink>
           <NavLink className="linkb" to="/Register">
-            Register
+            REGISTER
           </NavLink>
         </>
       )}
