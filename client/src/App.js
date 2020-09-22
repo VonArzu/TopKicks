@@ -5,7 +5,7 @@ import "./App.css";
 
 import Layout from "./Layouts/Layout";
 import Login from "./screens/Login/Login";
-// import Register from "./screens/Register/Register";
+import Register from "./screens/Register/Register";
 
 import {
   loginUser,
@@ -14,14 +14,7 @@ import {
   removeToken,
 } from "./Services/auth";
 
-import Home from "./screens/Home/Home";
-// import AllKicks from "./screens/AllKicks/AllKicks";
-import Brands from "./screens/Brands/Brands";
-// import kicks from "./Services/kicks";
-// import CreateKick from "./screens/CreateKick/CreateKick";
-// import EditKick from "./screens/EditKick/EditKick";
-import KickDetail from "./screens/KickDetail/KickDetail";
-import Register from "./screens/Register/Register";
+import MainContainer from "./Containers/MainContainer";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -65,14 +58,9 @@ function App() {
           <Route path="/register">
             <Register registerSubmit={registerSubmit} />
           </Route>
-          <Route exact path="/Login" component={Login} />
-          <Route exact path="/Register" component={Register} />
-          <Route exact path="/" component={Home} />
-          {/* <Route exact path="/kicks/:type" component={kicks} /> */}
-          <Route exact path="/brands/:type" component={Brands} />
-          {/* <Route path="/add-kick" component={CreateKick} /> */}
-          {/* <Route exact path="/kicks/:id/edit" component={EditKick} /> */}
-          <Route exact path="/kicks/:type/:id" component={KickDetail} />
+          <Route path="/">
+            <MainContainer />
+          </Route>
         </Switch>
       </Layout>
     </div>

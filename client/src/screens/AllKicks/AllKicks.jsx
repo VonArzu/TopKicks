@@ -1,9 +1,18 @@
-import React, { useEffect, useState, useLayoutEffect } from "react";
-import { useParams, Link } from "react-router-dom";
-import "./AllKicks.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import "./AllKicks.css"
 
-import { getKicks } from "../../services/kicks";
+export default function AllKicks(props) {
+  const{kicks} = props
+  return (
+    <div>
+      {kicks.map(kick=>(
+        <Link to={`/kicks/${kick.id}`}>
+        <p>{kick.name}</p>
+        <img src={kick.image_url}/>
+      </Link>
+      ))}
+    </div>
+  )
+}
 
-const AllKicks = () => {};
-
-export default AllKicks;

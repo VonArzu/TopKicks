@@ -2,7 +2,7 @@ import React from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav>
       <div className="navb">
@@ -10,7 +10,7 @@ const Nav = () => {
           <NavLink className="linkb" to="/">
             HOME
           </NavLink>
-          <NavLink className="linkb" to="/AllKicks">
+          <NavLink className="linkb" to="/kicks">
             KICKS
           </NavLink>
           <NavLink className="linkb" to="/CreateKick">
@@ -19,12 +19,7 @@ const Nav = () => {
           <NavLink className="linkb" to="/Brands">
             BRANDS
           </NavLink>
-          <NavLink className="linkb" to="/Login">
-            Login
-          </NavLink>
-          <NavLink className="linkb" to="/Register">
-            Register
-          </NavLink>
+          {props.children}
         </div>
       </div>
     </nav>

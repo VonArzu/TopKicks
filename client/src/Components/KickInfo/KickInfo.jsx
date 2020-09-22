@@ -7,22 +7,20 @@ import Nav from "../Shared/Nav/Nav";
 
 import "./KickInfo.css";
 
-const KickInfo = ({ name, brand, color, year, price }) => {
+const KickInfo = ({ name, image_url }) => {
   return (
-    <Nav>
+    <>
       <div className="kick-info">
         <h2>Kick Info:</h2>
         <h3 className="kick-detail-left">Name: {name}</h3>
-        <h3 className="kick-detail-left">Brand: {brand}</h3>
-        <h3 className="kick-detail-left">Color: {color}</h3>
-        <h3 className="kick-detail-left">Year: {year}</h3>
-        <h3 className="kick-detail-left">Price: {price}</h3>
+        <img src= {image_url}/>
+        
 
-        <Link to="/kick">
+        <Link to="/kicks">
           <MainButton buttonText={"DOPE KICKS!"} buttonColor={"orange"} />
         </Link>
       </div>
-    </Nav>
+    </>
   );
 };
 

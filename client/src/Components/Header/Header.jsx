@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Nav from "../Shared/Nav/Nav";
 
 export default function Header(props) {
@@ -7,23 +7,23 @@ export default function Header(props) {
   return (
     <header>
       <h1>Top Kicks</h1>
+      <Nav>
       {currentUser ? (
-        <div>
-          <p>{currentUser.username}</p>
-          <button onClick={props.handleLogout}>logout</button>
-        </div>
-      ) : (
-        <Nav>
-          <Link to="/login">Login/Register</Link>
-        </Nav>
-      )}
-      <hr />
-      {currentUser && (
         <>
-          <Link to="/kicks">Kicks</Link>
-          <Link to="/brands">Brands</Link>
+          <p>{currentUser.username}</p>
+          <p onClick={props.handleLogout}>logout</p>
+        </>
+      ) : (
+        <>
+          <NavLink className="linkb" to="/Login">
+            Login
+          </NavLink>
+          <NavLink className="linkb" to="/Register">
+            Register
+          </NavLink>
         </>
       )}
+      </Nav>
     </header>
   );
 }

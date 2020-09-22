@@ -1,6 +1,6 @@
 class KicksController < ApplicationController
   before_action :authorize_request, only: [:create, :update, :destroy]
-  before_action :set_kick, only: [:show, :update, :destroy]
+  before_action :set_kick, only: [:update, :destroy]
 
   # GET /kicks
   def index
@@ -11,11 +11,9 @@ class KicksController < ApplicationController
 
   # GET /kicks/1
   def show
-   
     @kick = Kick.find(params[:id])
-    render​ ​json:​ ​@kick, ​include:​ ​:brands
-
-    ​end
+    render json: @kick, include: [:brands, :opinions]
+  end
 
   # POST /kicks
   def create
@@ -51,6 +49,6 @@ class KicksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def kick_params
-      params.require(:kick).permit(:name, :user_id)
+      params.require(:kick).permit(:name, :user_id, :image_url)
     end
-end
+  end

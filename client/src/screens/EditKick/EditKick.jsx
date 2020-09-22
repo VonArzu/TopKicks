@@ -1,40 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getKick, updateKick } from "../../services/kicks";
+import { getKick, updateKick } from "../../Services/kicks";
 import Header from "../../Components/Header/Header";
 
-const EditKick = () => {
+const EditKick = (props) => {
   const [kick, setKick] = useState({
     name: "",
+    image_url:""
   });
+const {handleEdit} = props
 
   let { id } = useParams();
 
   useEffect(() => {
     const fetchKick = async () => {
       const kick = await getKick(id);
-      setPet(kick);
+      setKick(kick);
     };
     fetchKick();
   }, [id]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setPet({
+    setKick({
       ...kick,
       [name]: value,
     });
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    await updatePet(id, kick);
-  };
 
   return (
-    <Nav>
+    <>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(event)=>{
+          event.preventDefault()
+          handleEdit(id, kick)
+
+
+
+        }}>
           <label htmlFor="name"></label>
           <input
             type="text"
@@ -46,6 +50,16 @@ const EditKick = () => {
             placeholder="Name"
             onChange={handleChange}
           />
+          <label htmlFor="image_url">Image</label>
+          <input
+            type="text"
+            name="image_url"
+            id="image_url"
+            placeholder="Image"
+            value={kick.image_url}
+            required
+            onChange={handleChange}
+          />
           <label htmlFor="submitButton"></label>
           <input
             type="submit"
@@ -55,7 +69,7 @@ const EditKick = () => {
           />
         </form>
       </div>
-    </Nav>
+    </>
   );
 };
 
