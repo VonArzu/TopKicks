@@ -87,15 +87,15 @@ src
 |__ components/User
       |__ Login.jsx
       |__ Register.jsx
-      |__ AddKick.jsx
+      |__ CreateKick.jsx
       |__ EditKick.jsx
       |__ DeleteKick.jsx
 |__ screens/
       |__ Splash.jsx
       |__ Home.jsx
       |__ Kicks.jsx
+      |__ AddKicks.jsx
       |__ Brands.jsx
-      |__ KickBrands.jsx
 
 
 ```

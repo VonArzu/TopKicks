@@ -53,7 +53,7 @@ export default function MainContainer() {
       <Route path="/kicks">
         <AllKicks kicks={kicks} />
       </Route>
-      <Route path="/brands/:type" component={Brands} />
+      <Route path="/brands" component={Brands} />
       <Route path="/CreateKick">
         <CreateKick handleCreate={handleCreate} />
       </Route>

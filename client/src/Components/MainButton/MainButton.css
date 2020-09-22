@@ -1,11 +1,11 @@
 .main-button {
   /* background-color: rgb(214, 95, 6); */
   color: rgb(255, 255, 255);
-  min-height: 100px;
-  min-width: 300px;
-  max-width: 350px;
-  font-size: 36px;
-  font-weight: 900;
+  min-height: 50px;
+  min-width: 150px;
+  max-width: 125px;
+  font-size: 18px;
+  font-weight: 450;
   border: none;
   border-radius: 10px;
 }
