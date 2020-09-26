@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "../../Components/Header/Header";
-import Nav from "../../Components/Shared/Nav/Nav";
+// import Header from "../../Components/Header/Header";
+// import Nav from "../../Components/Shared/Nav/Nav";
 
 const CreateKick = (props) => {
   const [kick, setKick] = useState({

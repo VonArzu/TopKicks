@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getKick, updateKick } from "../../Services/kicks";
-import Header from "../../Components/Header/Header";
+// import Header from "../../Components/Header/Header";
 
 const EditKick = (props) => {
   const [kick, setKick] = useState({
